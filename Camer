@@ -1,0 +1,6 @@
+
+Si  no es  WScript.Arguments.Named.Exists ( " elevate " ),  entonces
+  CreateObject ( "Shell.Application" ) .ShellExecute  WScript.FullName  _
+    ,  "" ""  &  WScript.ScriptFullName  &  "" "/ elevate" ,  "" ,  "runas" ,  1
+  WScript.Quit
+Finalizar  si
